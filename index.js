@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(fileUpload());
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.3ftktcj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb+srv://final-assignment:${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.r2hag.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -22,7 +22,7 @@ const client = new MongoClient(uri, {
   },
 });
 
-        // final-assignment   E2vJuLe5sXNH3tb
+   
 
 async function bootstrap() {
   try {
